@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script> var t1 = new Date().getTime(); </script> 
+		<script src="way.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="vipspa.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+
+		<div way-scope="someScope">
+			
+		
+		  	<input type="" name="" id="" value="" way-data='something'/>
+		    <div way-data="something"></div> <!-- Will render "hello" -->
+
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		way.set("someScope", { something: "" });
+		
+	</script>
+<script>
+  		window.onload = function() { 
+			console.log('页面加载'+(new Date().getTime()-t1) +" 毫秒"); 
+		} 
+    </script>
+</html>
